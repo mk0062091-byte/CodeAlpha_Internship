@@ -1,0 +1,23 @@
+/* style.css - small custom touches on top of Bootstrap */
+
+body {
+    background-color: #f4f6f9;
+}
+
+.login-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4e73df 0%, #224abe 100%);
+}
+
+.login-page .card {
+    border: none;
+    border-radius: 12px;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.table-dark th {
+    font-weight: 600;
+}

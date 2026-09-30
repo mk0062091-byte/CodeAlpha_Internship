@@ -1,0 +1,127 @@
+from reportlab.pdfgen import canvas
+from reportlab.lib.pagesizes import A4
+
+output_path = r"c:\Users\hp\OneDrive\Desktop\CodeCrafters\Internship\resume.pdf"
+
+c = canvas.Canvas(output_path, pagesize=A4)
+width, height = A4
+
+lines = [
+    "MEGHA KASHYAP",
+    "Dehradun, Uttarakhand | 8279476004 | mk0062091@gmail.com",
+    "www.linkedin.com/in/megha-kashyap-6a27502a5 | https://github.com/mk0062091-byte",
+    "",
+    "SUMMARY",
+    "B.Tech Computer Science & Engineering student with knowledge of C, C++, Python, SQL, HTML, CSS, and JavaScript.",
+    "Have worked on projects related to web development, databases. Interested in web designing and learning new technologies.",
+    "Looking for opportunities to improve my technical skills and gain practical experience.",
+    "",
+    "EDUCATION",
+    "Bachelor of Technology in Computer Science & Engineering",
+    "Swami Rama Himalayan University, Dehradun",
+    "2023 – Present | CGPA: 8.68",
+    "",
+    "Intermediate (Class XII)",
+    "D.B.S. Inter College | UK Board",
+    "2023 | 64%",
+    "",
+    "High School (Class X)",
+    "D.B.S. Inter College | UK Board",
+    "2020 | 64%",
+    "",
+    "PROJECTS",
+    "Online Attendance Register System",
+    "Technologies: PHP, MySQL, HTML, CSS, JavaScript",
+    "• Developed a web-based attendance management system for maintaining student attendance records digitally.",
+    "• Implemented PHP for application logic and MySQL for storing and managing attendance data.",
+    "• Designed a user-friendly interface for recording and managing attendance.",
+    "• Enabled organized storage and retrieval of student attendance records through the database.",
+    "",
+    "NyayaDhrishti – Campus Authority Suggestion System",
+    "Technologies: Next.js, JavaScript, Firebase/Firestore, HTML, CSS",
+    "• Developed a web-based campus platform focused on collecting and managing student suggestions.",
+    "• Implemented a campus authority suggestion system to facilitate communication between students and authorities.",
+    "• Integrated Firebase as the backend for application data management.",
+    "• Worked with Firestore security rules to manage access to stored data.",
+    "• Contributed to the development and improvement of the web application.",
+    "",
+    "DemoCrypt – Aadhaar-Enabled Web-Based Voting System",
+    "Technologies: HTML, CSS, JavaScript, Next.js, Firebase/Firestore",
+    "• Updated a web-based voting system to incorporate Aadhaar-based user verification/authentication.",
+    "• Worked on the web application structure and user-facing voting functionality.",
+    "• Used Firebase/Firestore for application data management and backend services.",
+    "• Worked with database security rules to help control access to stored application data.",
+    "• Collaborated on the development and improvement of the existing voting system.",
+    "",
+    "TECHNICAL SKILLS",
+    "Programming Languages: Python, C, C++, SQL",
+    "Web Technologies: HTML, CSS, JavaScript Basics",
+    "Core Computer Science: Data Structures & Algorithms Basics, DBMS, Object-Oriented Programming",
+    "Areas of Interest: IoT",
+    "Database: MySQL",
+    "Tools: Git, GitHub, VS Code, MS Office",
+    "",
+    "CERTIFICATIONS",
+    "• Python",
+    "• Cyber Security — Udemy",
+    "• IoT — Swami Rama Himalayan University",
+    "",
+    "ACHIEVEMENTS & ACTIVITIES",
+    "• Participated in hackathon and technical project development activities.",
+    "• Worked on technology-based project concepts focused on real-world problems.",
+    "• Participated in academic and technical activities at university level.",
+    "",
+    "EXTRACURRICULAR ACTIVITIES",
+    "• Hackathon and technical project participation",
+    "• Dance",
+    "• Yoga",
+    "• Cooking",
+    "• Badminton",
+    "• Team-based project development",
+    "• Exploring emerging technologies in AI, ML, IoT and Cyber Security",
+]
+
+y = height - 60
+section_titles = {
+    "SUMMARY",
+    "EDUCATION",
+    "PROJECTS",
+    "TECHNICAL SKILLS",
+    "CERTIFICATIONS",
+    "ACHIEVEMENTS & ACTIVITIES",
+    "EXTRACURRICULAR ACTIVITIES",
+}
+
+c.setFont("Helvetica-Bold", 22)
+c.drawString(72, y, "MEGHA KASHYAP")
+y -= 28
+c.setFont("Helvetica", 11)
+for line in lines[1:]:
+    if y < 60:
+        c.showPage()
+        y = height - 60
+
+    if line == "":
+        y -= 10
+        continue
+
+    if line in section_titles:
+        c.setFont("Helvetica-Bold", 12)
+        c.drawString(72, y, line)
+        c.setFont("Helvetica", 11)
+        y -= 18
+        continue
+
+    if line.startswith("•"):
+        x = 90
+    else:
+        x = 72
+
+    if line.startswith("Technologies:") or line.startswith("Programming Languages:") or line.startswith("Web Technologies:") or line.startswith("Core Computer Science:") or line.startswith("Database:") or line.startswith("Tools:"):
+        c.drawString(x, y, line)
+    else:
+        c.drawString(x, y, line)
+    y -= 14
+
+c.save()
+print(f"Created resume PDF at: {output_path}")

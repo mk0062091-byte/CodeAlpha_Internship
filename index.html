@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Megha Kashyap | Portfolio</title>
+<meta name="description" content="Portfolio of Megha Kashyap, B.Tech CSE student — web development and machine learning projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="logo">Megha<span class="logo-dot">.</span></a>
+    <nav class="main-nav" id="main-nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="about">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">B.Tech CSE · Swami Rama Himalayan University</p>
+    <h1 class="hero-title">
+      <span class="reveal-line">Megha Kashyap</span>
+      <span class="reveal-line hero-title-sub">builds things that run.</span>
+    </h1>
+    <p class="hero-bio reveal-fade">
+      B.Tech Computer Science &amp; Engineering student with practical knowledge of C, C++, Python,
+      SQL, HTML, CSS, and JavaScript. I have worked on projects related to web development,
+      databases, and digital solutions, and I’m passionate about web design, learning new
+      technologies, and building useful systems for real-world problems.
+    </p>
+    <div class="hero-actions reveal-fade">
+      <a href="#projects" class="btn btn-primary">See the work</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+
+    <div class="hero-metrics reveal-fade" aria-label="Professional highlights">
+      <div class="metric-card">
+        <span>03+</span>
+        <small>Major projects</small>
+      </div>
+      <div class="metric-card">
+        <span>4+</span>
+        <small>Core skills areas</small>
+      </div>
+      <div class="metric-card">
+        <span>100%</span>
+        <small>Built in-browser</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section class="section" id="skills">
+  <div class="section-inner">
+    <div class="section-head">
+      <h2>Skills</h2>
+      <p class="section-note">Tools I reach for most, grouped by what they're for.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Programming</h3>
+        <ul class="tag-list">
+          <li>Python</li>
+          <li>C</li>
+          <li>C++</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Web</h3>
+        <ul class="tag-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>Next.js</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Core CS</h3>
+        <ul class="tag-list">
+          <li>DSA Basics</li>
+          <li>DBMS</li>
+          <li>OOP</li>
+          <li>Firebase</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <ul class="tag-list">
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>VS Code</li>
+          <li>MS Office</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section class="section section-alt" id="projects">
+  <div class="section-inner">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <p class="section-note">A mix of coursework, internship deliverables and things I built because I was curious.</p>
+    </div>
+
+    <div class="project-list">
+
+      <!-- Featured project: THDC attendance -->
+      <article class="project-card">
+        <div class="project-text">
+          <p class="project-tag">web · database</p>
+          <h3>THDC Online Attendance Register System</h3>
+          <p>Designed a web-based attendance management system for tracking student records efficiently with a clean, digital workflow.</p>
+          <ul class="project-meta">
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <a href="#attendance-demo" class="project-link">View demo →</a>
+      </article>
+
+      <!-- Demo 1: Image Gallery -->
+      <article class="project-card project-card-demo">
+        <div class="project-text">
+          <p class="project-tag">html · css · javascript</p>
+          <h3>Image Gallery</h3>
+          <p>Filterable grid gallery with a keyboard-friendly lightbox. Built with vanilla JS — no libraries.</p>
+        </div>
+        <a href="#gallery-demo" class="project-link project-link-demo">Open live demo ↓</a>
+      </article>
+
+      <!-- Demo 2: Calculator -->
+      <article class="project-card project-card-demo">
+        <div class="project-text">
+          <p class="project-tag">interactive demo</p>
+          <h3>Calculator</h3>
+          <p>A keyboard-friendly calculator supporting chained arithmetic, percentages, decimals, and error handling.</p>
+        </div>
+        <a href="#calculator-demo" class="project-link project-link-demo">Open live demo ↓</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DEMO: THDC ATTENDANCE REGISTER ===================== -->
+<section class="section section-alt demo-section" id="attendance-demo">
+  <div class="section-inner">
+    <div class="demo-head">
+      <p class="project-tag">interactive front-end prototype</p>
+      <h2>THDC Online Attendance Register System</h2>
+      <p class="section-note">Choose a date, search the student list, and mark attendance. The demo stores updates locally in this browser.</p>
+    </div>
+    <div class="attendance-app" id="attendanceApp">
+      <div class="attendance-toolbar">
+        <label class="attendance-date-label" for="attendanceDate">Attendance date</label>
+        <input id="attendanceDate" type="date">
+        <label class="attendance-search-label" for="attendanceSearch">Search students</label>
+        <input id="attendanceSearch" type="search" placeholder="Name or roll number">
+      </div>
+      <div class="attendance-stats" aria-live="polite">
+        <div class="attendance-stat"><span id="attendanceTotal">0</span><small>Students</small></div>
+        <div class="attendance-stat"><span id="attendancePresent">0</span><small>Present</small></div>
+        <div class="attendance-stat"><span id="attendanceAbsent">0</span><small>Absent</small></div>
+        <div class="attendance-stat"><span id="attendanceUnmarked">0</span><small>Unmarked</small></div>
+      </div>
+      <div class="attendance-table-wrap">
+        <table class="attendance-table">
+          <thead><tr><th>Roll No.</th><th>Student</th><th>Status</th><th>Mark attendance</th></tr></thead>
+          <tbody id="attendanceRows"></tbody>
+        </table>
+      </div>
+      <p class="attendance-status" id="attendanceStatus" role="status">Sample roster · changes are stored locally in this browser.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DEMO: IMAGE GALLERY ===================== -->
+<section class="section demo-section" id="gallery-demo">
+  <div class="section-inner">
+    <div class="demo-head">
+      <p class="project-tag">live demo</p>
+      <h2>Image Gallery</h2>
+      <p class="section-note">Click any image to open the lightbox. Filter by category, or step through with the arrow keys.</p>
+    </div>
+
+    <div class="gallery-filters" id="galleryFilters">
+      <button class="filter-btn is-active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="city">City</button>
+      <button class="filter-btn" data-filter="people">People</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <!-- Gallery items injected by script.js -->
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightboxImg">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">&#8250;</button>
+  </div>
+</section>
+
+<!-- ===================== DEMO: CALCULATOR ===================== -->
+<section class="section section-alt demo-section" id="calculator-demo">
+  <div class="section-inner">
+    <div class="demo-head">
+      <p class="project-tag">live demo</p>
+      <h2>Calculator</h2>
+      <p class="section-note">Click the buttons, or use your keyboard — numbers, + − × ÷, Enter for "=", Backspace to clear one digit, Escape for AC.</p>
+    </div>
+
+    <div class="calculator" id="calculator">
+      <div class="calc-screen">
+        <div class="calc-expression" id="calcExpression">&nbsp;</div>
+        <div class="calc-result" id="calcResult">0</div>
+      </div>
+      <div class="calc-keys">
+        <button class="calc-key calc-key-fn" data-action="clear">AC</button>
+        <button class="calc-key calc-key-fn" data-action="sign">±</button>
+        <button class="calc-key calc-key-fn" data-action="percent">%</button>
+        <button class="calc-key calc-key-op" data-action="operator" data-value="÷">÷</button>
+
+        <button class="calc-key" data-action="digit" data-value="7">7</button>
+        <button class="calc-key" data-action="digit" data-value="8">8</button>
+        <button class="calc-key" data-action="digit" data-value="9">9</button>
+        <button class="calc-key calc-key-op" data-action="operator" data-value="×">×</button>
+
+        <button class="calc-key" data-action="digit" data-value="4">4</button>
+        <button class="calc-key" data-action="digit" data-value="5">5</button>
+        <button class="calc-key" data-action="digit" data-value="6">6</button>
+        <button class="calc-key calc-key-op" data-action="operator" data-value="−">−</button>
+
+        <button class="calc-key" data-action="digit" data-value="1">1</button>
+        <button class="calc-key" data-action="digit" data-value="2">2</button>
+        <button class="calc-key" data-action="digit" data-value="3">3</button>
+        <button class="calc-key calc-key-op" data-action="operator" data-value="+">+</button>
+
+        <button class="calc-key calc-key-zero" data-action="digit" data-value="0">0</button>
+        <button class="calc-key" data-action="decimal">.</button>
+        <button class="calc-key calc-key-equals" data-action="equals">=</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RESUME ===================== -->
+<section class="section" id="resume">
+  <div class="section-inner section-inner-narrow">
+    <div class="section-head">
+      <h2>Resume</h2>
+      <p class="section-note">A one-page summary of my education, projects and skills.</p>
+    </div>
+    <div class="resume-box">
+      <div>
+        <p class="resume-box-title">Megha_Kashyap_Resume.pdf</p>
+        <p class="resume-box-sub">Updated September 2026 · Professional resume</p>
+      </div>
+      <a href="./resume.pdf" class="btn btn-primary" download>Download resume</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="section section-alt" id="contact">
+  <div class="section-inner section-inner-narrow">
+    <div class="section-head">
+      <h2>Contact</h2>
+      <p class="section-note">Have a project in mind, or just want to say hi? Send a message.</p>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send message</button>
+      <p class="form-status" id="formStatus" role="status"></p>
+    </form>
+
+    <div class="social-links">
+      <a href="https://github.com/mk0062091-byte" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/megha-kashyap-6a27502a5" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:mk0062091@gmail.com">mk0062091@gmail.com</a>
+      <a href="tel:+918279476004">+91 8279476004</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>Built by Megha Kashyap with HTML, CSS &amp; JavaScript.</p>
+  <a href="#top" class="back-to-top">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
